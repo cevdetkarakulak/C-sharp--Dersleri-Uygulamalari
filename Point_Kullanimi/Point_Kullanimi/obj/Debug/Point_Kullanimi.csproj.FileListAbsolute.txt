@@ -1,0 +1,10 @@
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\bin\Debug\Point_Kullanimi.exe.config
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\bin\Debug\Point_Kullanimi.exe
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\bin\Debug\Point_Kullanimi.pdb
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.Form1.resources
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.Properties.Resources.resources
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.exe
+C:\Users\efe_k\source\repos\Point_Kullanimi\Point_Kullanimi\obj\Debug\Point_Kullanimi.pdb

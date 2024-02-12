@@ -1,0 +1,10 @@
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\bin\Debug\Matematik_Fonksiyon.exe.config
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\bin\Debug\Matematik_Fonksiyon.exe
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\bin\Debug\Matematik_Fonksiyon.pdb
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.Form1.resources
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.Properties.Resources.resources
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.exe
+C:\Users\efe_k\source\repos\Matematik_Fonksiyon\Matematik_Fonksiyon\obj\Debug\Matematik_Fonksiyon.pdb

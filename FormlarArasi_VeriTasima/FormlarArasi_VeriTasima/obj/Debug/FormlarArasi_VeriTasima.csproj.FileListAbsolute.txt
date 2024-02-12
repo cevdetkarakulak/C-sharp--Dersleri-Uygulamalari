@@ -1,0 +1,11 @@
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\bin\Debug\FormlarArasi_VeriTasima.exe.config
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\bin\Debug\FormlarArasi_VeriTasima.exe
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\bin\Debug\FormlarArasi_VeriTasima.pdb
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.Form1.resources
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.Form2.resources
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.Properties.Resources.resources
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.exe
+C:\Users\efe_k\source\repos\FormlarArasi_VeriTasima\FormlarArasi_VeriTasima\obj\Debug\FormlarArasi_VeriTasima.pdb

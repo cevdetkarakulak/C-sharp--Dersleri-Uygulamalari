@@ -1,0 +1,10 @@
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.Form1.resources
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.Properties.Resources.resources
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\Enum\Enum\bin\Debug\Enum.exe.config
+C:\Users\efe_k\source\repos\Enum\Enum\bin\Debug\Enum.exe
+C:\Users\efe_k\source\repos\Enum\Enum\bin\Debug\Enum.pdb
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.exe
+C:\Users\efe_k\source\repos\Enum\Enum\obj\Debug\Enum.pdb
