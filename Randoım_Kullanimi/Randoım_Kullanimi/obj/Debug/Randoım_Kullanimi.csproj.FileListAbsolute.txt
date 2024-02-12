@@ -1,0 +1,10 @@
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\bin\Debug\Randoım_Kullanimi.exe.config
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\bin\Debug\Randoım_Kullanimi.exe
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\bin\Debug\Randoım_Kullanimi.pdb
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.Form1.resources
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.Properties.Resources.resources
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.exe
+C:\Users\efe_k\source\repos\Randoım_Kullanimi\Randoım_Kullanimi\obj\Debug\Randoım_Kullanimi.pdb

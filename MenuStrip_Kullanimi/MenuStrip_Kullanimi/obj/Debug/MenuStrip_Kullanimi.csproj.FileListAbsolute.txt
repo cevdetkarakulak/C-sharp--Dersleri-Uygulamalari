@@ -1,0 +1,10 @@
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\bin\Debug\MenuStrip_Kullanimi.exe.config
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\bin\Debug\MenuStrip_Kullanimi.exe
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\bin\Debug\MenuStrip_Kullanimi.pdb
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.Form1.resources
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.Properties.Resources.resources
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.exe
+C:\Users\efe_k\source\repos\MenuStrip_Kullanimi\MenuStrip_Kullanimi\obj\Debug\MenuStrip_Kullanimi.pdb

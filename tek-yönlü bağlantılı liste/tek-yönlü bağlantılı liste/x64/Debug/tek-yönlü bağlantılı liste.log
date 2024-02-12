@@ -1,0 +1,23 @@
+﻿  tek-yönlü bağlantılı liste.cpp
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(27,7): error C4430: tür belirticisi eksik - int varsayıldı. Not: C++ varsayılan int desteği içermez
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(38,5): error C3861: 'ekle': tanımlayıcı bulunamadı
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(42,20): error C3861: 'listele': tanımlayıcı bulunamadı
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(45,29): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(52,33): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(135,29): warning C4390: ';': boş denetlenen deyim bulundu; amaçlanan bu muydu?
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(179,60): warning C4474: 'printf' : biçim dizesi için çok fazla sayıda bağımsız değişken geçirildi
+  C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(179,60):
+  yer tutucular ve bunların parametreleri 1 değişen sayıda bağımsız değişken bekliyor, ancak 2 tane sağlandı
+  
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(187,15): error C2440: '=': 'void *' - 'BLİSTE *' dönüşümü yapılamıyor
+  C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(187,15):
+  'void*' değerinden 'void' olmayan işaretçisine dönüştürme açık bir tür dönüştürme gerektiriyor
+  
+C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(195,10): warning C4473: 'scanf_s' : biçim dizesi için yeterli bağımsız değişken geçirilmedi
+  C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(195,10):
+  yer tutucular ve bunların parametreleri 2 değişen sayıda bağımsız değişken bekliyor, ancak 1 tane sağlandı
+  C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(195,10):
+  eksik 2 değişen sayıda bağımsız değişkeni '%s' biçim dizesi için gereklidir
+  C:\Users\efe_k\source\repos\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste\tek-yönlü bağlantılı liste.cpp(195,10):
+  bu bağımsız değişken arabellek boyutu olarak kullanılıyor
+  
