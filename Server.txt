@@ -1,0 +1,1 @@
+Data Source=Floppa\SQLEXPRESS01;Initial Catalog=Personel;Integrated Security=True;Trust Server Certificate=True
