@@ -1,0 +1,10 @@
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\bin\Debug\Metin_Belgesi_Okuma.exe.config
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\bin\Debug\Metin_Belgesi_Okuma.exe
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\bin\Debug\Metin_Belgesi_Okuma.pdb
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.Form1.resources
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.Properties.Resources.resources
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.csproj.GenerateResource.cache
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.exe
+C:\Users\efe_k\source\repos\Metin_Belgesi_Okuma\Metin_Belgesi_Okuma\obj\Debug\Metin_Belgesi_Okuma.pdb
