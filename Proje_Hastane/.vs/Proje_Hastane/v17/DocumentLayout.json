@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|c:\\users\\efe_k\\source\\repos\\proje_hastane\\proje_hastane\\frmsekreterdetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|solutionrelative:proje_hastane\\frmsekreterdetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|c:\\users\\efe_k\\source\\repos\\proje_hastane\\proje_hastane\\frmsekreterdetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|solutionrelative:proje_hastane\\frmsekreterdetay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|c:\\users\\efe_k\\source\\repos\\proje_hastane\\proje_hastane\\frmsekretergiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|solutionrelative:proje_hastane\\frmsekretergiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\proje_hastane\\frmsekretergiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E465083D-8564-42B1-8FC3-5025AF6E1B58}|Proje_Hastane\\Proje_Hastane.csproj|solutionrelative:proje_hastane\\frmsekretergiris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 100,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmSekreterDetay.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterDetay.cs",
+              "RelativeDocumentMoniker": "Proje_Hastane\\FrmSekreterDetay.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterDetay.cs [Design]",
+              "RelativeToolTip": "Proje_Hastane\\FrmSekreterDetay.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T12:51:55.468Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmSekreterDetay.cs",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterDetay.cs",
+              "RelativeDocumentMoniker": "Proje_Hastane\\FrmSekreterDetay.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterDetay.cs",
+              "RelativeToolTip": "Proje_Hastane\\FrmSekreterDetay.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAqwEsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T12:52:10.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FrmSekreterGiris.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterGiris.cs",
+              "RelativeDocumentMoniker": "Proje_Hastane\\FrmSekreterGiris.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterGiris.cs [Design]",
+              "RelativeToolTip": "Proje_Hastane\\FrmSekreterGiris.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T12:38:43.242Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FrmSekreterGiris.cs",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterGiris.cs",
+              "RelativeDocumentMoniker": "Proje_Hastane\\FrmSekreterGiris.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\repos\\Proje_Hastane\\Proje_Hastane\\FrmSekreterGiris.cs",
+              "RelativeToolTip": "Proje_Hastane\\FrmSekreterGiris.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T12:40:38.634Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
