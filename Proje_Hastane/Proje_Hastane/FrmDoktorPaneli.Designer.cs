@@ -66,7 +66,7 @@
             this.cmbbrans.Location = new System.Drawing.Point(122, 151);
             this.cmbbrans.Name = "cmbbrans";
             this.cmbbrans.Size = new System.Drawing.Size(130, 31);
-            this.cmbbrans.TabIndex = 55;
+            this.cmbbrans.TabIndex = 4;
             // 
             // txtsoyad
             // 
@@ -75,7 +75,7 @@
             this.txtsoyad.Margin = new System.Windows.Forms.Padding(2);
             this.txtsoyad.Name = "txtsoyad";
             this.txtsoyad.Size = new System.Drawing.Size(130, 31);
-            this.txtsoyad.TabIndex = 54;
+            this.txtsoyad.TabIndex = 2;
             // 
             // label5
             // 
@@ -95,7 +95,7 @@
             this.txtsifre.Margin = new System.Windows.Forms.Padding(2);
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.Size = new System.Drawing.Size(130, 31);
-            this.txtsifre.TabIndex = 52;
+            this.txtsifre.TabIndex = 5;
             // 
             // label4
             // 
@@ -115,7 +115,7 @@
             this.txtad.Margin = new System.Windows.Forms.Padding(2);
             this.txtad.Name = "txtad";
             this.txtad.Size = new System.Drawing.Size(130, 31);
-            this.txtad.TabIndex = 50;
+            this.txtad.TabIndex = 1;
             // 
             // mskTC
             // 
@@ -125,7 +125,7 @@
             this.mskTC.Mask = "00000000000";
             this.mskTC.Name = "mskTC";
             this.mskTC.Size = new System.Drawing.Size(130, 31);
-            this.mskTC.TabIndex = 49;
+            this.mskTC.TabIndex = 3;
             this.mskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -155,18 +155,20 @@
             this.btnekle.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnekle.Location = new System.Drawing.Point(122, 243);
             this.btnekle.Name = "btnekle";
-            this.btnekle.Size = new System.Drawing.Size(58, 35);
+            this.btnekle.Size = new System.Drawing.Size(66, 35);
             this.btnekle.TabIndex = 57;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = false;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(282, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(387, 306);
+            this.dataGridView1.Size = new System.Drawing.Size(562, 306);
             this.dataGridView1.TabIndex = 58;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnsil
             // 
@@ -177,6 +179,7 @@
             this.btnsil.TabIndex = 59;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = false;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // btnguncelle
             // 
@@ -187,13 +190,15 @@
             this.btnguncelle.TabIndex = 60;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = false;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // FrmDoktorPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.ClientSize = new System.Drawing.Size(681, 333);
+            this.ClientSize = new System.Drawing.Size(856, 333);
             this.Controls.Add(this.btnguncelle);
             this.Controls.Add(this.btnsil);
             this.Controls.Add(this.dataGridView1);
@@ -211,8 +216,10 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmDoktorPaneli";
-            this.Text = "FrmDoktorPaneli";
+            this.Text = "Doktor Paneli";
+            this.Load += new System.EventHandler(this.FrmDoktorPaneli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

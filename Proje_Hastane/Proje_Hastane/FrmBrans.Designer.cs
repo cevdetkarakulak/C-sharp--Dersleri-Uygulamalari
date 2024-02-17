@@ -49,6 +49,7 @@
             this.btnguncelle.TabIndex = 74;
             this.btnguncelle.Text = "Güncelle";
             this.btnguncelle.UseVisualStyleBackColor = false;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // btnsil
             // 
@@ -59,14 +60,17 @@
             this.btnsil.TabIndex = 73;
             this.btnsil.Text = "Sil";
             this.btnsil.UseVisualStyleBackColor = false;
+            this.btnsil.Click += new System.EventHandler(this.btnsil_Click);
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(255, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(334, 189);
             this.dataGridView1.TabIndex = 72;
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnekle
             // 
@@ -77,6 +81,7 @@
             this.btnekle.TabIndex = 71;
             this.btnekle.Text = "Ekle";
             this.btnekle.UseVisualStyleBackColor = false;
+            this.btnekle.Click += new System.EventHandler(this.btnekle_Click);
             // 
             // txtbrans
             // 
@@ -85,7 +90,7 @@
             this.txtbrans.Margin = new System.Windows.Forms.Padding(2);
             this.txtbrans.Name = "txtbrans";
             this.txtbrans.Size = new System.Drawing.Size(130, 31);
-            this.txtbrans.TabIndex = 68;
+            this.txtbrans.TabIndex = 1;
             // 
             // label5
             // 
@@ -122,6 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(601, 220);
             this.Controls.Add(this.btnguncelle);
@@ -135,8 +141,10 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmBrans";
-            this.Text = "FrmBrans";
+            this.Text = "Branş İşlemleri";
+            this.Load += new System.EventHandler(this.FrmBrans_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

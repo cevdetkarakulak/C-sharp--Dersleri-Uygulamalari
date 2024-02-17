@@ -18,17 +18,17 @@ namespace Proje_Hastane
             InitializeComponent();
         }
         public string TCnumara;
-        SqlBaglanti bgl=new SqlBaglanti();
+        SqlBaglanti bgl = new SqlBaglanti();
         private void FrmSekreterDetay_Load(object sender, EventArgs e)
         {
             lblTC.Text = TCnumara;
 
             //Ad Soyad
 
-            SqlCommand komut1= new SqlCommand("Select SekreterAdSoyad from Tbl_Sekreter where SekreterTC=@p1 ",bgl.baglanti());
+            SqlCommand komut1 = new SqlCommand("Select SekreterAdSoyad from Tbl_Sekreter where SekreterTC=@p1 ", bgl.baglanti());
             komut1.Parameters.AddWithValue("@p1", lblTC.Text);
-            SqlDataReader dr1= komut1.ExecuteReader();
-            while(dr1.Read())
+            SqlDataReader dr1 = komut1.ExecuteReader();
+            while (dr1.Read())
             {
                 Lbladsoyad.Text = dr1[0].ToString();
             }
@@ -46,7 +46,7 @@ namespace Proje_Hastane
             DataTable dt2 = new DataTable();
             SqlDataAdapter da2 = new SqlDataAdapter("Select (DoktorAd+ ' '+ DoktorSoyad)as 'Doktorlar', DoktorBrans From Tbl_Doktorlar", bgl.baglanti());
             da2.Fill(dt2);
-            dataGridView2.DataSource= dt2;
+            dataGridView2.DataSource = dt2;
 
             //Branşı Combobax a Aktarma
             SqlCommand komut2 = new SqlCommand("Select Bransad from Tbl_Branslar", bgl.baglanti());
@@ -56,8 +56,8 @@ namespace Proje_Hastane
                 cmbbrans.Items.Add(dr2[0].ToString());
 
             }
-           bgl.baglanti() .Close();
-               
+            bgl.baglanti().Close();
+
 
         }
 
@@ -79,13 +79,53 @@ namespace Proje_Hastane
             cmbdoktor.Items.Clear();
             SqlCommand komut = new SqlCommand("Select DoktorAd,DoktorSoyad from Tbl_Doktorlar where DoktorBrans=@p1", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", cmbbrans.Text);
-            SqlDataReader dr=komut.ExecuteReader();
-            while(dr.Read())
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
             {
                 cmbdoktor.Items.Add(dr[0] + " " + dr[1]);
             }
             bgl.baglanti().Close();
 
+        }
+
+        private void btnduyuruolustur_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("insert into Tbl_Duyurular (duyuru) values (@d1)", bgl.baglanti());
+            komut.Parameters.AddWithValue("@d1", rchduyuru.Text);
+            komut.ExecuteNonQuery();
+            bgl.baglanti().Close();
+            MessageBox.Show("Duyuru Oluşturuldu");
+
+        }
+
+        private void btndoktorpanel_Click(object sender, EventArgs e)
+        {
+            FrmDoktorPaneli drp = new FrmDoktorPaneli();
+            drp.Show();
+        }
+
+        private void btnbranspanel_Click(object sender, EventArgs e)
+        {
+            FrmBrans frb = new FrmBrans();
+            frb.Show();
+
+        }
+
+        private void btnliste_Click(object sender, EventArgs e)
+        {
+            FrmRandevuListesi frr = new FrmRandevuListesi();
+            frr.Show();
+        }
+
+        private void btnguncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmDuyurular frd = new FrmDuyurular();
+            frd.Show();
         }
     }
 }

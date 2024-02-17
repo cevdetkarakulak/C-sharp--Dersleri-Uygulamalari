@@ -39,20 +39,19 @@
             this.btnduyuruolustur = new System.Windows.Forms.Button();
             this.rchduyuru = new System.Windows.Forms.RichTextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnguncelle = new System.Windows.Forms.Button();
             this.btnkaydet = new System.Windows.Forms.Button();
             this.chkdurum = new System.Windows.Forms.CheckBox();
             this.mskTC = new System.Windows.Forms.MaskedTextBox();
             this.cmbbrans = new System.Windows.Forms.ComboBox();
             this.cmbdoktor = new System.Windows.Forms.ComboBox();
             this.msksaat = new System.Windows.Forms.MaskedTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.msktarih = new System.Windows.Forms.MaskedTextBox();
             this.txtid = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.grpbranslar = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -62,6 +61,7 @@
             this.btnliste = new System.Windows.Forms.Button();
             this.btnbranspanel = new System.Windows.Forms.Button();
             this.btndoktorpanel = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -149,6 +149,7 @@
             this.btnduyuruolustur.TabIndex = 2;
             this.btnduyuruolustur.Text = "Oluştur";
             this.btnduyuruolustur.UseVisualStyleBackColor = false;
+            this.btnduyuruolustur.Click += new System.EventHandler(this.btnduyuruolustur_Click);
             // 
             // rchduyuru
             // 
@@ -160,7 +161,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.btnguncelle);
             this.groupBox3.Controls.Add(this.btnkaydet);
             this.groupBox3.Controls.Add(this.chkdurum);
             this.groupBox3.Controls.Add(this.mskTC);
@@ -182,24 +182,13 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Randevu Paneli";
             // 
-            // btnguncelle
-            // 
-            this.btnguncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnguncelle.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnguncelle.Location = new System.Drawing.Point(77, 309);
-            this.btnguncelle.Name = "btnguncelle";
-            this.btnguncelle.Size = new System.Drawing.Size(134, 26);
-            this.btnguncelle.TabIndex = 32;
-            this.btnguncelle.Text = "Güncelle";
-            this.btnguncelle.UseVisualStyleBackColor = false;
-            // 
             // btnkaydet
             // 
             this.btnkaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.btnkaydet.Font = new System.Drawing.Font("Corbel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnkaydet.Location = new System.Drawing.Point(77, 277);
             this.btnkaydet.Name = "btnkaydet";
-            this.btnkaydet.Size = new System.Drawing.Size(134, 26);
+            this.btnkaydet.Size = new System.Drawing.Size(126, 38);
             this.btnkaydet.TabIndex = 3;
             this.btnkaydet.Text = "Kaydet";
             this.btnkaydet.UseVisualStyleBackColor = false;
@@ -249,6 +238,17 @@
             this.msksaat.Size = new System.Drawing.Size(126, 31);
             this.msksaat.TabIndex = 27;
             this.msksaat.ValidatingType = typeof(System.DateTime);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(2, 182);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 23);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Doktor:";
             // 
             // msktarih
             // 
@@ -310,17 +310,6 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "TC.:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(2, 182);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 23);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Doktor:";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -374,6 +363,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.btnliste);
             this.groupBox6.Controls.Add(this.btnbranspanel);
             this.groupBox6.Controls.Add(this.btndoktorpanel);
@@ -387,37 +377,52 @@
             // btnliste
             // 
             this.btnliste.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnliste.Location = new System.Drawing.Point(319, 35);
+            this.btnliste.Location = new System.Drawing.Point(254, 35);
             this.btnliste.Name = "btnliste";
-            this.btnliste.Size = new System.Drawing.Size(129, 31);
+            this.btnliste.Size = new System.Drawing.Size(129, 33);
             this.btnliste.TabIndex = 2;
             this.btnliste.Text = "Randevu Liste";
             this.btnliste.UseVisualStyleBackColor = false;
+            this.btnliste.Click += new System.EventHandler(this.btnliste_Click);
             // 
             // btnbranspanel
             // 
             this.btnbranspanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnbranspanel.Location = new System.Drawing.Point(184, 35);
+            this.btnbranspanel.Location = new System.Drawing.Point(132, 35);
             this.btnbranspanel.Name = "btnbranspanel";
-            this.btnbranspanel.Size = new System.Drawing.Size(129, 31);
+            this.btnbranspanel.Size = new System.Drawing.Size(115, 33);
             this.btnbranspanel.TabIndex = 1;
             this.btnbranspanel.Text = "Branş Paneli";
             this.btnbranspanel.UseVisualStyleBackColor = false;
+            this.btnbranspanel.Click += new System.EventHandler(this.btnbranspanel_Click);
             // 
             // btndoktorpanel
             // 
             this.btndoktorpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btndoktorpanel.Location = new System.Drawing.Point(44, 35);
+            this.btndoktorpanel.Location = new System.Drawing.Point(1, 35);
             this.btndoktorpanel.Name = "btndoktorpanel";
-            this.btndoktorpanel.Size = new System.Drawing.Size(129, 31);
+            this.btndoktorpanel.Size = new System.Drawing.Size(126, 33);
             this.btndoktorpanel.TabIndex = 0;
             this.btndoktorpanel.Text = "Doktor Paneli";
             this.btndoktorpanel.UseVisualStyleBackColor = false;
+            this.btndoktorpanel.Click += new System.EventHandler(this.btndoktorpanel_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.button1.Location = new System.Drawing.Point(388, 35);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(115, 33);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Duyurular";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmSekreterDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(777, 446);
             this.Controls.Add(this.groupBox6);
@@ -429,8 +434,9 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.Name = "FrmSekreterDetay";
-            this.Text = "FrmSekreterDetay";
+            this.Text = "Sekreter Detay";
             this.Load += new System.EventHandler(this.FrmSekreterDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -466,7 +472,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnguncelle;
         private System.Windows.Forms.Button btnkaydet;
         private System.Windows.Forms.CheckBox chkdurum;
         private System.Windows.Forms.MaskedTextBox mskTC;
@@ -481,5 +486,6 @@
         private System.Windows.Forms.Button btnliste;
         private System.Windows.Forms.Button btnbranspanel;
         private System.Windows.Forms.Button btndoktorpanel;
+        private System.Windows.Forms.Button button1;
     }
 }

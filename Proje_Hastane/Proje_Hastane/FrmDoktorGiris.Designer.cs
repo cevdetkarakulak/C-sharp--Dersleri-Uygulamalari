@@ -48,6 +48,7 @@
             this.btngirisyap.TabIndex = 12;
             this.btngirisyap.Text = "Giriş Yap";
             this.btngirisyap.UseVisualStyleBackColor = false;
+            this.btngirisyap.Click += new System.EventHandler(this.btngirisyap_Click);
             // 
             // txtsifre
             // 
@@ -57,6 +58,7 @@
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.Size = new System.Drawing.Size(108, 31);
             this.txtsifre.TabIndex = 11;
+            this.txtsifre.UseSystemPasswordChar = true;
             // 
             // mskTC
             // 
@@ -104,8 +106,10 @@
             // 
             // FrmDoktorGiris
             // 
+            this.AcceptButton = this.btngirisyap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(424, 227);
             this.Controls.Add(this.btngirisyap);
@@ -117,8 +121,9 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "FrmDoktorGiris";
-            this.Text = "FrmDoktorGiris";
+            this.Text = "Doktor Giris";
             this.ResumeLayout(false);
             this.PerformLayout();
 

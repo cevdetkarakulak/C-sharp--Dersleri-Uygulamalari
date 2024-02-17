@@ -143,6 +143,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(456, 434);
             this.dataGridView2.TabIndex = 1;
+            this.dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellClick);
             // 
             // groupBox3
             // 
@@ -166,6 +167,7 @@
             this.btncikis.TabIndex = 3;
             this.btncikis.Text = "Çıkış";
             this.btncikis.UseVisualStyleBackColor = false;
+            this.btncikis.Click += new System.EventHandler(this.btncikis_Click);
             // 
             // btnduyuru
             // 
@@ -177,6 +179,7 @@
             this.btnduyuru.TabIndex = 1;
             this.btnduyuru.Text = "Duyurular";
             this.btnduyuru.UseVisualStyleBackColor = false;
+            this.btnduyuru.Click += new System.EventHandler(this.btnduyuru_Click);
             // 
             // btnguncelle
             // 
@@ -188,11 +191,13 @@
             this.btnguncelle.TabIndex = 0;
             this.btnguncelle.Text = "Bilgi Düzenle";
             this.btnguncelle.UseVisualStyleBackColor = false;
+            this.btnguncelle.Click += new System.EventHandler(this.btnguncelle_Click);
             // 
             // FrmDoktorDetay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(766, 485);
             this.Controls.Add(this.groupBox3);
@@ -202,8 +207,10 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MinimizeBox = false;
             this.Name = "FrmDoktorDetay";
             this.Text = "FrmDoktorDetay";
+            this.Load += new System.EventHandler(this.FrmDoktorDetay_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

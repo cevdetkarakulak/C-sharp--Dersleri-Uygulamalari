@@ -51,6 +51,7 @@
             this.btnbilgiguncelle.TabIndex = 44;
             this.btnbilgiguncelle.Text = "Güncelle";
             this.btnbilgiguncelle.UseVisualStyleBackColor = false;
+            this.btnbilgiguncelle.Click += new System.EventHandler(this.btnbilgiguncelle_Click);
             // 
             // txtsoyad
             // 
@@ -59,7 +60,7 @@
             this.txtsoyad.Margin = new System.Windows.Forms.Padding(2);
             this.txtsoyad.Name = "txtsoyad";
             this.txtsoyad.Size = new System.Drawing.Size(130, 31);
-            this.txtsoyad.TabIndex = 40;
+            this.txtsoyad.TabIndex = 2;
             // 
             // label5
             // 
@@ -79,7 +80,7 @@
             this.txtsifre.Margin = new System.Windows.Forms.Padding(2);
             this.txtsifre.Name = "txtsifre";
             this.txtsifre.Size = new System.Drawing.Size(130, 31);
-            this.txtsifre.TabIndex = 38;
+            this.txtsifre.TabIndex = 5;
             // 
             // label4
             // 
@@ -99,7 +100,7 @@
             this.txtad.Margin = new System.Windows.Forms.Padding(2);
             this.txtad.Name = "txtad";
             this.txtad.Size = new System.Drawing.Size(130, 31);
-            this.txtad.TabIndex = 35;
+            this.txtad.TabIndex = 1;
             // 
             // mskTC
             // 
@@ -109,7 +110,7 @@
             this.mskTC.Mask = "00000000000";
             this.mskTC.Name = "mskTC";
             this.mskTC.Size = new System.Drawing.Size(130, 31);
-            this.mskTC.TabIndex = 34;
+            this.mskTC.TabIndex = 3;
             this.mskTC.ValidatingType = typeof(int);
             // 
             // label3
@@ -143,7 +144,7 @@
             this.cmbbrans.Location = new System.Drawing.Point(126, 149);
             this.cmbbrans.Name = "cmbbrans";
             this.cmbbrans.Size = new System.Drawing.Size(130, 31);
-            this.cmbbrans.TabIndex = 45;
+            this.cmbbrans.TabIndex = 4;
             // 
             // label1
             // 
@@ -158,8 +159,10 @@
             // 
             // FrmDoktorBilgiDuzenle
             // 
+            this.AcceptButton = this.btnbilgiguncelle;
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(301, 303);
             this.Controls.Add(this.label1);
@@ -176,8 +179,10 @@
             this.Font = new System.Drawing.Font("Corbel", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MinimizeBox = false;
             this.Name = "FrmDoktorBilgiDuzenle";
-            this.Text = "FrmDoktorBilgiDuzenle";
+            this.Text = "Doktor Bilgi Güncelleme";
+            this.Load += new System.EventHandler(this.FrmDoktorBilgiDuzenle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
