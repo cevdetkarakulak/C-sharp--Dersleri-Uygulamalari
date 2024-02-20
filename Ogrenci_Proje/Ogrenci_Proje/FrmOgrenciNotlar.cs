@@ -24,7 +24,7 @@ namespace Ogrenci_Proje
 
         private void FrmOgrenciNotlar_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("select DERSAD,SINAV1,SINAV2,SINAV3,PROJE,ORTALAMA  FROM TBLNOTLAR\r\nINNER JOIN TBLDERSLER ON TBLNOTLAR.DERSID=TBLDERSLER.DERSID WHERE OGRID=1", baglanti);
+            SqlCommand komut = new SqlCommand("select DERSAD,SINAV1,SINAV2,SINAV3,PROJE,ORTALAMA  FROM TBLNOTLAR\r\nINNER JOIN TBLDERSLER ON TBLNOTLAR.DERSID=TBLDERSLER.DERSID WHERE OGRID=@p1", baglanti);
             komut.Parameters.AddWithValue("@p1", numara);
             //this.Text=numara.ToString();
             SqlDataAdapter da = new SqlDataAdapter(komut);

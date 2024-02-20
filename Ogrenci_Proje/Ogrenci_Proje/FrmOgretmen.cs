@@ -22,5 +22,17 @@ namespace Ogrenci_Proje
             FrmKulup fr= new FrmKulup();
             fr.Show();
         }
+
+        private void btnders_Click(object sender, EventArgs e)
+        {
+            FrmDers fr= new FrmDers();
+            fr.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            FrmOgrenci fr= new FrmOgrenci();
+            fr.Show();
+        }
     }
 }
