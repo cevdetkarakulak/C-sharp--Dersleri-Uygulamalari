@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Hastane Otomasyon", "Hastane Otomasyon\Hastane Otomasyon.vdproj", "{ABC9BCB0-307C-4154-91F1-927BC4074A1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABC9BCB0-307C-4154-91F1-927BC4074A1B}.Debug|Default.ActiveCfg = Debug
+		{ABC9BCB0-307C-4154-91F1-927BC4074A1B}.Debug|Default.Build.0 = Debug
+		{ABC9BCB0-307C-4154-91F1-927BC4074A1B}.Release|Default.ActiveCfg = Release
+		{ABC9BCB0-307C-4154-91F1-927BC4074A1B}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7571833-6342-4985-9081-8510D0A8BEF8}
+	EndGlobalSection
+EndGlobal
