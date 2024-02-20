@@ -28,6 +28,10 @@ namespace Ogrenci_Proje {
         
         private DataTable1DataTable tableDataTable1;
         
+        private TBLNOTLARDataTable tableTBLNOTLAR;
+        
+        private global::System.Data.DataRelation relationFK_TBLNOTLAR_TBLDERSLER;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -61,6 +65,9 @@ namespace Ogrenci_Proje {
                 }
                 if ((ds.Tables["DataTable1"] != null)) {
                     base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                }
+                if ((ds.Tables["TBLNOTLAR"] != null)) {
+                    base.Tables.Add(new TBLNOTLARDataTable(ds.Tables["TBLNOTLAR"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -97,6 +104,16 @@ namespace Ogrenci_Proje {
         public DataTable1DataTable DataTable1 {
             get {
                 return this.tableDataTable1;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public TBLNOTLARDataTable TBLNOTLAR {
+            get {
+                return this.tableTBLNOTLAR;
             }
         }
         
@@ -173,6 +190,9 @@ namespace Ogrenci_Proje {
                 if ((ds.Tables["DataTable1"] != null)) {
                     base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
                 }
+                if ((ds.Tables["TBLNOTLAR"] != null)) {
+                    base.Tables.Add(new TBLNOTLARDataTable(ds.Tables["TBLNOTLAR"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -218,6 +238,13 @@ namespace Ogrenci_Proje {
                     this.tableDataTable1.InitVars();
                 }
             }
+            this.tableTBLNOTLAR = ((TBLNOTLARDataTable)(base.Tables["TBLNOTLAR"]));
+            if ((initTable == true)) {
+                if ((this.tableTBLNOTLAR != null)) {
+                    this.tableTBLNOTLAR.InitVars();
+                }
+            }
+            this.relationFK_TBLNOTLAR_TBLDERSLER = this.Relations["FK_TBLNOTLAR_TBLDERSLER"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -232,6 +259,12 @@ namespace Ogrenci_Proje {
             base.Tables.Add(this.tableTBLDERSLER);
             this.tableDataTable1 = new DataTable1DataTable();
             base.Tables.Add(this.tableDataTable1);
+            this.tableTBLNOTLAR = new TBLNOTLARDataTable();
+            base.Tables.Add(this.tableTBLNOTLAR);
+            this.relationFK_TBLNOTLAR_TBLDERSLER = new global::System.Data.DataRelation("FK_TBLNOTLAR_TBLDERSLER", new global::System.Data.DataColumn[] {
+                        this.tableTBLDERSLER.DERSIDColumn}, new global::System.Data.DataColumn[] {
+                        this.tableTBLNOTLAR.DERSIDColumn}, false);
+            this.Relations.Add(this.relationFK_TBLNOTLAR_TBLDERSLER);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -243,6 +276,12 @@ namespace Ogrenci_Proje {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private bool ShouldSerializeDataTable1() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private bool ShouldSerializeTBLNOTLAR() {
             return false;
         }
         
@@ -306,6 +345,9 @@ namespace Ogrenci_Proje {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public delegate void TBLNOTLARRowChangeEventHandler(object sender, TBLNOTLARRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -904,6 +946,383 @@ namespace Ogrenci_Proje {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class TBLNOTLARDataTable : global::System.Data.TypedTableBase<TBLNOTLARRow> {
+            
+            private global::System.Data.DataColumn columnNOTID;
+            
+            private global::System.Data.DataColumn columnDERSID;
+            
+            private global::System.Data.DataColumn columnOGRID;
+            
+            private global::System.Data.DataColumn columnSINAV1;
+            
+            private global::System.Data.DataColumn columnSINAV2;
+            
+            private global::System.Data.DataColumn columnSINAV3;
+            
+            private global::System.Data.DataColumn columnPROJE;
+            
+            private global::System.Data.DataColumn columnORTALAMA;
+            
+            private global::System.Data.DataColumn columnDURUM;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARDataTable() {
+                this.TableName = "TBLNOTLAR";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal TBLNOTLARDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected TBLNOTLARDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn NOTIDColumn {
+                get {
+                    return this.columnNOTID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DERSIDColumn {
+                get {
+                    return this.columnDERSID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn OGRIDColumn {
+                get {
+                    return this.columnOGRID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SINAV1Column {
+                get {
+                    return this.columnSINAV1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SINAV2Column {
+                get {
+                    return this.columnSINAV2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SINAV3Column {
+                get {
+                    return this.columnSINAV3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn PROJEColumn {
+                get {
+                    return this.columnPROJE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ORTALAMAColumn {
+                get {
+                    return this.columnORTALAMA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DURUMColumn {
+                get {
+                    return this.columnDURUM;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRow this[int index] {
+                get {
+                    return ((TBLNOTLARRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBLNOTLARRowChangeEventHandler TBLNOTLARRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBLNOTLARRowChangeEventHandler TBLNOTLARRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBLNOTLARRowChangeEventHandler TBLNOTLARRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public event TBLNOTLARRowChangeEventHandler TBLNOTLARRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void AddTBLNOTLARRow(TBLNOTLARRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRow AddTBLNOTLARRow(TBLDERSLERRow parentTBLDERSLERRowByFK_TBLNOTLAR_TBLDERSLER, int OGRID, byte SINAV1, byte SINAV2, byte SINAV3, byte PROJE, decimal ORTALAMA, bool DURUM) {
+                TBLNOTLARRow rowTBLNOTLARRow = ((TBLNOTLARRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        null,
+                        OGRID,
+                        SINAV1,
+                        SINAV2,
+                        SINAV3,
+                        PROJE,
+                        ORTALAMA,
+                        DURUM};
+                if ((parentTBLDERSLERRowByFK_TBLNOTLAR_TBLDERSLER != null)) {
+                    columnValuesArray[1] = parentTBLDERSLERRowByFK_TBLNOTLAR_TBLDERSLER[0];
+                }
+                rowTBLNOTLARRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowTBLNOTLARRow);
+                return rowTBLNOTLARRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRow FindByNOTID(int NOTID) {
+                return ((TBLNOTLARRow)(this.Rows.Find(new object[] {
+                            NOTID})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                TBLNOTLARDataTable cln = ((TBLNOTLARDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new TBLNOTLARDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal void InitVars() {
+                this.columnNOTID = base.Columns["NOTID"];
+                this.columnDERSID = base.Columns["DERSID"];
+                this.columnOGRID = base.Columns["OGRID"];
+                this.columnSINAV1 = base.Columns["SINAV1"];
+                this.columnSINAV2 = base.Columns["SINAV2"];
+                this.columnSINAV3 = base.Columns["SINAV3"];
+                this.columnPROJE = base.Columns["PROJE"];
+                this.columnORTALAMA = base.Columns["ORTALAMA"];
+                this.columnDURUM = base.Columns["DURUM"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            private void InitClass() {
+                this.columnNOTID = new global::System.Data.DataColumn("NOTID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNOTID);
+                this.columnDERSID = new global::System.Data.DataColumn("DERSID", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDERSID);
+                this.columnOGRID = new global::System.Data.DataColumn("OGRID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOGRID);
+                this.columnSINAV1 = new global::System.Data.DataColumn("SINAV1", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSINAV1);
+                this.columnSINAV2 = new global::System.Data.DataColumn("SINAV2", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSINAV2);
+                this.columnSINAV3 = new global::System.Data.DataColumn("SINAV3", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSINAV3);
+                this.columnPROJE = new global::System.Data.DataColumn("PROJE", typeof(byte), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPROJE);
+                this.columnORTALAMA = new global::System.Data.DataColumn("ORTALAMA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnORTALAMA);
+                this.columnDURUM = new global::System.Data.DataColumn("DURUM", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDURUM);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnNOTID}, true));
+                this.columnNOTID.AutoIncrement = true;
+                this.columnNOTID.AutoIncrementSeed = -1;
+                this.columnNOTID.AutoIncrementStep = -1;
+                this.columnNOTID.AllowDBNull = false;
+                this.columnNOTID.ReadOnly = true;
+                this.columnNOTID.Unique = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRow NewTBLNOTLARRow() {
+                return ((TBLNOTLARRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new TBLNOTLARRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(TBLNOTLARRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.TBLNOTLARRowChanged != null)) {
+                    this.TBLNOTLARRowChanged(this, new TBLNOTLARRowChangeEvent(((TBLNOTLARRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.TBLNOTLARRowChanging != null)) {
+                    this.TBLNOTLARRowChanging(this, new TBLNOTLARRowChangeEvent(((TBLNOTLARRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.TBLNOTLARRowDeleted != null)) {
+                    this.TBLNOTLARRowDeleted(this, new TBLNOTLARRowChangeEvent(((TBLNOTLARRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.TBLNOTLARRowDeleting != null)) {
+                    this.TBLNOTLARRowDeleting(this, new TBLNOTLARRowChangeEvent(((TBLNOTLARRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void RemoveTBLNOTLARRow(TBLNOTLARRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "TBLNOTLARDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class TBLDERSLERRow : global::System.Data.DataRow {
@@ -954,6 +1373,17 @@ namespace Ogrenci_Proje {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDERSADNull() {
                 this[this.tableTBLDERSLER.DERSADColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRow[] GetTBLNOTLARRows() {
+                if ((this.Table.ChildRelations["FK_TBLNOTLAR_TBLDERSLER"] == null)) {
+                    return new TBLNOTLARRow[0];
+                }
+                else {
+                    return ((TBLNOTLARRow[])(base.GetChildRows(this.Table.ChildRelations["FK_TBLNOTLAR_TBLDERSLER"])));
+                }
             }
         }
         
@@ -1096,6 +1526,267 @@ namespace Ogrenci_Proje {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class TBLNOTLARRow : global::System.Data.DataRow {
+            
+            private TBLNOTLARDataTable tableTBLNOTLAR;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            internal TBLNOTLARRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableTBLNOTLAR = ((TBLNOTLARDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int NOTID {
+                get {
+                    return ((int)(this[this.tableTBLNOTLAR.NOTIDColumn]));
+                }
+                set {
+                    this[this.tableTBLNOTLAR.NOTIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte DERSID {
+                get {
+                    try {
+                        return ((byte)(this[this.tableTBLNOTLAR.DERSIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DERSID\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.DERSIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int OGRID {
+                get {
+                    try {
+                        return ((int)(this[this.tableTBLNOTLAR.OGRIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'OGRID\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.OGRIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte SINAV1 {
+                get {
+                    try {
+                        return ((byte)(this[this.tableTBLNOTLAR.SINAV1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SINAV1\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.SINAV1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte SINAV2 {
+                get {
+                    try {
+                        return ((byte)(this[this.tableTBLNOTLAR.SINAV2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SINAV2\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.SINAV2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte SINAV3 {
+                get {
+                    try {
+                        return ((byte)(this[this.tableTBLNOTLAR.SINAV3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'SINAV3\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.SINAV3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public byte PROJE {
+                get {
+                    try {
+                        return ((byte)(this[this.tableTBLNOTLAR.PROJEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PROJE\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.PROJEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal ORTALAMA {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableTBLNOTLAR.ORTALAMAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ORTALAMA\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.ORTALAMAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool DURUM {
+                get {
+                    try {
+                        return ((bool)(this[this.tableTBLNOTLAR.DURUMColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'DURUM\' in table \'TBLNOTLAR\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableTBLNOTLAR.DURUMColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLDERSLERRow TBLDERSLERRow {
+                get {
+                    return ((TBLDERSLERRow)(this.GetParentRow(this.Table.ParentRelations["FK_TBLNOTLAR_TBLDERSLER"])));
+                }
+                set {
+                    this.SetParentRow(value, this.Table.ParentRelations["FK_TBLNOTLAR_TBLDERSLER"]);
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDERSIDNull() {
+                return this.IsNull(this.tableTBLNOTLAR.DERSIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDERSIDNull() {
+                this[this.tableTBLNOTLAR.DERSIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsOGRIDNull() {
+                return this.IsNull(this.tableTBLNOTLAR.OGRIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetOGRIDNull() {
+                this[this.tableTBLNOTLAR.OGRIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSINAV1Null() {
+                return this.IsNull(this.tableTBLNOTLAR.SINAV1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSINAV1Null() {
+                this[this.tableTBLNOTLAR.SINAV1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSINAV2Null() {
+                return this.IsNull(this.tableTBLNOTLAR.SINAV2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSINAV2Null() {
+                this[this.tableTBLNOTLAR.SINAV2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSINAV3Null() {
+                return this.IsNull(this.tableTBLNOTLAR.SINAV3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSINAV3Null() {
+                this[this.tableTBLNOTLAR.SINAV3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsPROJENull() {
+                return this.IsNull(this.tableTBLNOTLAR.PROJEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetPROJENull() {
+                this[this.tableTBLNOTLAR.PROJEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsORTALAMANull() {
+                return this.IsNull(this.tableTBLNOTLAR.ORTALAMAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetORTALAMANull() {
+                this[this.tableTBLNOTLAR.ORTALAMAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDURUMNull() {
+                return this.IsNull(this.tableTBLNOTLAR.DURUMColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDURUMNull() {
+                this[this.tableTBLNOTLAR.DURUMColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -1149,6 +1840,40 @@ namespace Ogrenci_Proje {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public DataTable1Row Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public class TBLNOTLARRowChangeEvent : global::System.EventArgs {
+            
+            private TBLNOTLARRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRowChangeEvent(TBLNOTLARRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public TBLNOTLARRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -1952,6 +2677,709 @@ where OGRAD=@OGRAD";
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class TBLNOTLARTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public TBLNOTLARTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "TBLNOTLAR";
+            tableMapping.ColumnMappings.Add("NOTID", "NOTID");
+            tableMapping.ColumnMappings.Add("DERSID", "DERSID");
+            tableMapping.ColumnMappings.Add("OGRID", "OGRID");
+            tableMapping.ColumnMappings.Add("SINAV1", "SINAV1");
+            tableMapping.ColumnMappings.Add("SINAV2", "SINAV2");
+            tableMapping.ColumnMappings.Add("SINAV3", "SINAV3");
+            tableMapping.ColumnMappings.Add("PROJE", "PROJE");
+            tableMapping.ColumnMappings.Add("ORTALAMA", "ORTALAMA");
+            tableMapping.ColumnMappings.Add("DURUM", "DURUM");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [TBLNOTLAR] WHERE (([NOTID] = @Original_NOTID) AND ((@IsNull_DERSID = 1 AND [DERSID] IS NULL) OR ([DERSID] = @Original_DERSID)) AND ((@IsNull_OGRID = 1 AND [OGRID] IS NULL) OR ([OGRID] = @Original_OGRID)) AND ((@IsNull_SINAV1 = 1 AND [SINAV1] IS NULL) OR ([SINAV1] = @Original_SINAV1)) AND ((@IsNull_SINAV2 = 1 AND [SINAV2] IS NULL) OR ([SINAV2] = @Original_SINAV2)) AND ((@IsNull_SINAV3 = 1 AND [SINAV3] IS NULL) OR ([SINAV3] = @Original_SINAV3)) AND ((@IsNull_PROJE = 1 AND [PROJE] IS NULL) OR ([PROJE] = @Original_PROJE)) AND ((@IsNull_ORTALAMA = 1 AND [ORTALAMA] IS NULL) OR ([ORTALAMA] = @Original_ORTALAMA)) AND ((@IsNull_DURUM = 1 AND [DURUM] IS NULL) OR ([DURUM] = @Original_DURUM)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NOTID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOTID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DERSID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DERSID", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SINAV1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SINAV1", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SINAV2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SINAV2", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SINAV3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SINAV3", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_PROJE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PROJE", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ORTALAMA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ORTALAMA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ORTALAMA", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "ORTALAMA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DURUM", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DURUM", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [TBLNOTLAR] ([DERSID], [OGRID], [SINAV1], [SINAV2], [SINAV3], [PROJE], [ORTALAMA], [DURUM]) VALUES (@DERSID, @OGRID, @SINAV1, @SINAV2, @SINAV3, @PROJE, @ORTALAMA, @DURUM);
+SELECT NOTID, DERSID, OGRID, SINAV1, SINAV2, SINAV3, PROJE, ORTALAMA, DURUM FROM TBLNOTLAR WHERE (NOTID = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DERSID", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV1", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV2", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV3", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PROJE", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ORTALAMA", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "ORTALAMA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DURUM", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [TBLNOTLAR] SET [DERSID] = @DERSID, [OGRID] = @OGRID, [SINAV1] = @SINAV1, [SINAV2] = @SINAV2, [SINAV3] = @SINAV3, [PROJE] = @PROJE, [ORTALAMA] = @ORTALAMA, [DURUM] = @DURUM WHERE (([NOTID] = @Original_NOTID) AND ((@IsNull_DERSID = 1 AND [DERSID] IS NULL) OR ([DERSID] = @Original_DERSID)) AND ((@IsNull_OGRID = 1 AND [OGRID] IS NULL) OR ([OGRID] = @Original_OGRID)) AND ((@IsNull_SINAV1 = 1 AND [SINAV1] IS NULL) OR ([SINAV1] = @Original_SINAV1)) AND ((@IsNull_SINAV2 = 1 AND [SINAV2] IS NULL) OR ([SINAV2] = @Original_SINAV2)) AND ((@IsNull_SINAV3 = 1 AND [SINAV3] IS NULL) OR ([SINAV3] = @Original_SINAV3)) AND ((@IsNull_PROJE = 1 AND [PROJE] IS NULL) OR ([PROJE] = @Original_PROJE)) AND ((@IsNull_ORTALAMA = 1 AND [ORTALAMA] IS NULL) OR ([ORTALAMA] = @Original_ORTALAMA)) AND ((@IsNull_DURUM = 1 AND [DURUM] IS NULL) OR ([DURUM] = @Original_DURUM)));
+SELECT NOTID, DERSID, OGRID, SINAV1, SINAV2, SINAV3, PROJE, ORTALAMA, DURUM FROM TBLNOTLAR WHERE (NOTID = @NOTID)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DERSID", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV1", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV2", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV3", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PROJE", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ORTALAMA", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "ORTALAMA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DURUM", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NOTID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NOTID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DERSID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DERSID", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_OGRID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SINAV1", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SINAV1", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SINAV2", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SINAV2", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_SINAV3", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_SINAV3", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_PROJE", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PROJE", global::System.Data.SqlDbType.TinyInt, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_ORTALAMA", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ORTALAMA", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ORTALAMA", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 5, 2, "ORTALAMA", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DURUM", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DURUM", global::System.Data.SqlDbType.Bit, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NOTID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "NOTID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Ogrenci_Proje.Properties.Settings.Default.OkulConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT        NOTID, DERSID, OGRID, SINAV1, SINAV2, SINAV3, PROJE, ORTALAMA, DURU" +
+                "M\r\nFROM            TBLNOTLAR\r\nWHERE        (OGRID = @OGRID)";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "UPDATE [TBLNOTLAR] SET [DERSID] = @DERSID, [OGRID] = @OGRID, [SINAV1] = @SINAV1, " +
+                "[SINAV2] = @SINAV2, [SINAV3] = @SINAV3, [PROJE] = @PROJE, [ORTALAMA] = @ORTALAMA" +
+                ", [DURUM] = @DURUM WHERE ([NOTID] = @Original_NOTID) ";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DERSID", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 0, 0, "DERSID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OGRID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "OGRID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV1", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV1", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV2", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV2", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SINAV3", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 0, 0, "SINAV3", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PROJE", global::System.Data.SqlDbType.TinyInt, 1, global::System.Data.ParameterDirection.Input, 0, 0, "PROJE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ORTALAMA", global::System.Data.SqlDbType.Decimal, 5, global::System.Data.ParameterDirection.Input, 5, 2, "ORTALAMA", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DURUM", global::System.Data.SqlDbType.Bit, 1, global::System.Data.ParameterDirection.Input, 0, 0, "DURUM", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_NOTID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "NOTID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.TBLNOTLARDataTable dataTable, global::System.Nullable<int> OGRID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((OGRID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(OGRID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.TBLNOTLARDataTable NotListesi(global::System.Nullable<int> OGRID) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((OGRID.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((int)(OGRID.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            DataSet1.TBLNOTLARDataTable dataTable = new DataSet1.TBLNOTLARDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSet1.TBLNOTLARDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(DataSet1 dataSet) {
+            return this.Adapter.Update(dataSet, "TBLNOTLAR");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_NOTID, global::System.Nullable<byte> Original_DERSID, global::System.Nullable<int> Original_OGRID, global::System.Nullable<byte> Original_SINAV1, global::System.Nullable<byte> Original_SINAV2, global::System.Nullable<byte> Original_SINAV3, global::System.Nullable<byte> Original_PROJE, global::System.Nullable<decimal> Original_ORTALAMA, global::System.Nullable<bool> Original_DURUM) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_NOTID));
+            if ((Original_DERSID.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((byte)(Original_DERSID.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((Original_OGRID.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((int)(Original_OGRID.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((Original_SINAV1.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((byte)(Original_SINAV1.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Original_SINAV2.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((byte)(Original_SINAV2.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((Original_SINAV3.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((byte)(Original_SINAV3.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_PROJE.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((byte)(Original_PROJE.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_ORTALAMA.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((decimal)(Original_ORTALAMA.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_DURUM.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[16].Value = ((bool)(Original_DURUM.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(global::System.Nullable<byte> DERSID, global::System.Nullable<int> OGRID, global::System.Nullable<byte> SINAV1, global::System.Nullable<byte> SINAV2, global::System.Nullable<byte> SINAV3, global::System.Nullable<byte> PROJE, global::System.Nullable<decimal> ORTALAMA, global::System.Nullable<bool> DURUM) {
+            if ((DERSID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((byte)(DERSID.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((OGRID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((int)(OGRID.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV1.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((byte)(SINAV1.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV2.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((byte)(SINAV2.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV3.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((byte)(SINAV3.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PROJE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((byte)(PROJE.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((ORTALAMA.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(ORTALAMA.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((DURUM.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((bool)(DURUM.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    global::System.Nullable<byte> DERSID, 
+                    global::System.Nullable<int> OGRID, 
+                    global::System.Nullable<byte> SINAV1, 
+                    global::System.Nullable<byte> SINAV2, 
+                    global::System.Nullable<byte> SINAV3, 
+                    global::System.Nullable<byte> PROJE, 
+                    global::System.Nullable<decimal> ORTALAMA, 
+                    global::System.Nullable<bool> DURUM, 
+                    int Original_NOTID, 
+                    global::System.Nullable<byte> Original_DERSID, 
+                    global::System.Nullable<int> Original_OGRID, 
+                    global::System.Nullable<byte> Original_SINAV1, 
+                    global::System.Nullable<byte> Original_SINAV2, 
+                    global::System.Nullable<byte> Original_SINAV3, 
+                    global::System.Nullable<byte> Original_PROJE, 
+                    global::System.Nullable<decimal> Original_ORTALAMA, 
+                    global::System.Nullable<bool> Original_DURUM, 
+                    int NOTID) {
+            if ((DERSID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((byte)(DERSID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((OGRID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(OGRID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV1.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((byte)(SINAV1.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV2.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((byte)(SINAV2.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV3.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((byte)(SINAV3.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PROJE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((byte)(PROJE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((ORTALAMA.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(ORTALAMA.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((DURUM.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((bool)(DURUM.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((int)(Original_NOTID));
+            if ((Original_DERSID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((byte)(Original_DERSID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((Original_OGRID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_OGRID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_SINAV1.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((byte)(Original_SINAV1.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((Original_SINAV2.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((byte)(Original_SINAV2.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((Original_SINAV3.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((byte)(Original_SINAV3.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            if ((Original_PROJE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((byte)(Original_PROJE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((Original_ORTALAMA.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((decimal)(Original_ORTALAMA.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((Original_DURUM.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((bool)(Original_DURUM.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((int)(NOTID));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    global::System.Nullable<byte> DERSID, 
+                    global::System.Nullable<int> OGRID, 
+                    global::System.Nullable<byte> SINAV1, 
+                    global::System.Nullable<byte> SINAV2, 
+                    global::System.Nullable<byte> SINAV3, 
+                    global::System.Nullable<byte> PROJE, 
+                    global::System.Nullable<decimal> ORTALAMA, 
+                    global::System.Nullable<bool> DURUM, 
+                    int Original_NOTID, 
+                    global::System.Nullable<byte> Original_DERSID, 
+                    global::System.Nullable<int> Original_OGRID, 
+                    global::System.Nullable<byte> Original_SINAV1, 
+                    global::System.Nullable<byte> Original_SINAV2, 
+                    global::System.Nullable<byte> Original_SINAV3, 
+                    global::System.Nullable<byte> Original_PROJE, 
+                    global::System.Nullable<decimal> Original_ORTALAMA, 
+                    global::System.Nullable<bool> Original_DURUM) {
+            return this.Update(DERSID, OGRID, SINAV1, SINAV2, SINAV3, PROJE, ORTALAMA, DURUM, Original_NOTID, Original_DERSID, Original_OGRID, Original_SINAV1, Original_SINAV2, Original_SINAV3, Original_PROJE, Original_ORTALAMA, Original_DURUM, Original_NOTID);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
+        public virtual int NotGuncelle(global::System.Nullable<byte> DERSID, global::System.Nullable<int> OGRID, global::System.Nullable<byte> SINAV1, global::System.Nullable<byte> SINAV2, global::System.Nullable<byte> SINAV3, global::System.Nullable<byte> PROJE, global::System.Nullable<decimal> ORTALAMA, global::System.Nullable<bool> DURUM, int Original_NOTID) {
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[1];
+            if ((DERSID.HasValue == true)) {
+                command.Parameters[0].Value = ((byte)(DERSID.Value));
+            }
+            else {
+                command.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            if ((OGRID.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(OGRID.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV1.HasValue == true)) {
+                command.Parameters[2].Value = ((byte)(SINAV1.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV2.HasValue == true)) {
+                command.Parameters[3].Value = ((byte)(SINAV2.Value));
+            }
+            else {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            if ((SINAV3.HasValue == true)) {
+                command.Parameters[4].Value = ((byte)(SINAV3.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PROJE.HasValue == true)) {
+                command.Parameters[5].Value = ((byte)(PROJE.Value));
+            }
+            else {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((ORTALAMA.HasValue == true)) {
+                command.Parameters[6].Value = ((decimal)(ORTALAMA.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((DURUM.HasValue == true)) {
+                command.Parameters[7].Value = ((bool)(DURUM.Value));
+            }
+            else {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            command.Parameters[8].Value = ((int)(Original_NOTID));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -1964,6 +3392,8 @@ where OGRAD=@OGRAD";
         private UpdateOrderOption _updateOrder;
         
         private TBLDERSLERTableAdapter _tBLDERSLERTableAdapter;
+        
+        private TBLNOTLARTableAdapter _tBLNOTLARTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -1996,6 +3426,20 @@ where OGRAD=@OGRAD";
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public TBLNOTLARTableAdapter TBLNOTLARTableAdapter {
+            get {
+                return this._tBLNOTLARTableAdapter;
+            }
+            set {
+                this._tBLNOTLARTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -2017,6 +3461,10 @@ where OGRAD=@OGRAD";
                             && (this._tBLDERSLERTableAdapter.Connection != null))) {
                     return this._tBLDERSLERTableAdapter.Connection;
                 }
+                if (((this._tBLNOTLARTableAdapter != null) 
+                            && (this._tBLNOTLARTableAdapter.Connection != null))) {
+                    return this._tBLNOTLARTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -2031,6 +3479,9 @@ where OGRAD=@OGRAD";
             get {
                 int count = 0;
                 if ((this._tBLDERSLERTableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._tBLNOTLARTableAdapter != null)) {
                     count = (count + 1);
                 }
                 return count;
@@ -2053,6 +3504,15 @@ where OGRAD=@OGRAD";
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._tBLNOTLARTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.TBLNOTLAR.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._tBLNOTLARTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -2071,6 +3531,14 @@ where OGRAD=@OGRAD";
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._tBLNOTLARTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.TBLNOTLAR.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._tBLNOTLARTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -2081,6 +3549,14 @@ where OGRAD=@OGRAD";
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private int UpdateDeletedRows(DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._tBLNOTLARTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.TBLNOTLAR.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._tBLNOTLARTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._tBLDERSLERTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.TBLDERSLER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -2133,6 +3609,11 @@ where OGRAD=@OGRAD";
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
+            if (((this._tBLNOTLARTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._tBLNOTLARTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
                 throw new global::System.ApplicationException("TableAdapterManager contains no connection information. Set each TableAdapterMana" +
@@ -2172,6 +3653,15 @@ where OGRAD=@OGRAD";
                     if (this._tBLDERSLERTableAdapter.Adapter.AcceptChangesDuringUpdate) {
                         this._tBLDERSLERTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
                         adaptersWithAcceptChangesDuringUpdate.Add(this._tBLDERSLERTableAdapter.Adapter);
+                    }
+                }
+                if ((this._tBLNOTLARTableAdapter != null)) {
+                    revertConnections.Add(this._tBLNOTLARTableAdapter, this._tBLNOTLARTableAdapter.Connection);
+                    this._tBLNOTLARTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._tBLNOTLARTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._tBLNOTLARTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._tBLNOTLARTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._tBLNOTLARTableAdapter.Adapter);
                     }
                 }
                 // 
@@ -2235,6 +3725,10 @@ where OGRAD=@OGRAD";
                 if ((this._tBLDERSLERTableAdapter != null)) {
                     this._tBLDERSLERTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBLDERSLERTableAdapter]));
                     this._tBLDERSLERTableAdapter.Transaction = null;
+                }
+                if ((this._tBLNOTLARTableAdapter != null)) {
+                    this._tBLNOTLARTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._tBLNOTLARTableAdapter]));
+                    this._tBLNOTLARTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

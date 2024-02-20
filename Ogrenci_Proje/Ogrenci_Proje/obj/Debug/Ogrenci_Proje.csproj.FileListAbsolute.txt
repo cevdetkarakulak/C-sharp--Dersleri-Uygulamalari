@@ -15,7 +15,6 @@ C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogren
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\bin\Debug\Ogrenci_Proje.exe
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\bin\Debug\Ogrenci_Proje.pdb
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.csproj.AssemblyReference.cache
-C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.Form1.resources
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.FrmKulup.resources
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.FrmOgrenciNotlar.resources
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.FrmOgretmen.resources
@@ -26,3 +25,5 @@ C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogren
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.pdb
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.FrmDers.resources
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.FrmOgrenci.resources
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.FrmSinavNotlar.resources
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\Ogrenci_Proje\Ogrenci_Proje\obj\Debug\Ogrenci_Proje.Giriş.resources

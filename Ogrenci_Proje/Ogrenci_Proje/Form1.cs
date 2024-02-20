@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Ogrenci_Proje
 {
-    public partial class Form1 : Form
+    public partial class Giriş : Form
     {
-        public Form1()
+        public Giriş()
         {
             InitializeComponent();
         }
@@ -30,6 +30,11 @@ namespace Ogrenci_Proje
             fr.Show();
             this.Hide();
 
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
