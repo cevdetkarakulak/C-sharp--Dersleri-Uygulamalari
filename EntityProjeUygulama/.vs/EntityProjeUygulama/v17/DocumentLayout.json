@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frmgiri\u015F.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frmgiri\u015F.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frmgiri\u015F.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frmgiri\u015F.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frm\u0130statistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frm\u0130statistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frm\u0130statistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frm\u0130statistik.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frmgiri\u015F.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frmgiri\u015F.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frmurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frmurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frmanaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frmanaform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|c:\\users\\efe_k\\source\\c sharp\\c-sharp--dersleri-uygulamalari\\entityprojeuygulama\\entityprojeuygulama\\frmurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B289897-DC76-4C81-8897-49C4D95672AB}|EntityProjeUygulama\\EntityProjeUygulama.csproj|solutionrelative:entityprojeuygulama\\frmurun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FrmGiri\u015F.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmGiri\u015F.Designer.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\FrmGiri\u015F.Designer.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmGiri\u015F.Designer.cs",
+              "RelativeToolTip": "EntityProjeUygulama\\FrmGiri\u015F.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGAAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T13:35:23.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FrmGiri\u015F.cs",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmGiri\u015F.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\FrmGiri\u015F.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmGiri\u015F.cs",
+              "RelativeToolTip": "EntityProjeUygulama\\FrmGiri\u015F.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T13:30:02.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FrmGiri\u015F.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmGiri\u015F.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\FrmGiri\u015F.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmGiri\u015F.cs [Design]",
+              "RelativeToolTip": "EntityProjeUygulama\\FrmGiri\u015F.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T13:25:00.605Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Frm\u0130statistik.cs",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\Frm\u0130statistik.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\Frm\u0130statistik.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\Frm\u0130statistik.cs",
+              "RelativeToolTip": "EntityProjeUygulama\\Frm\u0130statistik.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAADwvxgAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:45:58.029Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Frm\u0130statistik.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\Frm\u0130statistik.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\Frm\u0130statistik.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\Frm\u0130statistik.cs [Design]",
+              "RelativeToolTip": "EntityProjeUygulama\\Frm\u0130statistik.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:30:37.169Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FrmAnaForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmAnaForm.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\FrmAnaForm.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmAnaForm.cs [Design]",
+              "RelativeToolTip": "EntityProjeUygulama\\FrmAnaForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T12:17:22.469Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FrmUrun.cs",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmUrun.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\FrmUrun.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmUrun.cs",
+              "RelativeToolTip": "EntityProjeUygulama\\FrmUrun.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAqwEEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:37:12.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FrmUrun.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmUrun.cs",
+              "RelativeDocumentMoniker": "EntityProjeUygulama\\FrmUrun.cs",
+              "ToolTip": "C:\\Users\\efe_k\\source\\C sharp\\C-sharp--Dersleri-Uygulamalari\\EntityProjeUygulama\\EntityProjeUygulama\\FrmUrun.cs [Design]",
+              "RelativeToolTip": "EntityProjeUygulama\\FrmUrun.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:28:21.112Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
