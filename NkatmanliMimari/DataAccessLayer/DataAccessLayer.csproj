@@ -46,9 +46,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EntitiyLayer\EntitiyLayer.csproj">
+    <ProjectReference Include="..\EntitiyLayer\EntityLayer.csproj">
       <Project>{14be71f0-e58b-434b-819b-f71b2ccd4960}</Project>
-      <Name>EntitiyLayer</Name>
+      <Name>EntityLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

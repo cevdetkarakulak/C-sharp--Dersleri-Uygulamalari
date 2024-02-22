@@ -1,0 +1,11 @@
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\bin\Debug\LogicLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\bin\Debug\LogicLayer.pdb
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\bin\Debug\EntitiyLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\bin\Debug\EntitiyLayer.pdb
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\obj\Debug\LogicLayer.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\obj\Debug\LogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\obj\Debug\LogicLayer.csproj.Up2Date
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\obj\Debug\LogicLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\LogicLayer\obj\Debug\LogicLayer.pdb

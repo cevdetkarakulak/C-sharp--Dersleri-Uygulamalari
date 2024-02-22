@@ -1,0 +1,9 @@
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\bin\Debug\EntitiyLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\bin\Debug\EntitiyLayer.pdb
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
