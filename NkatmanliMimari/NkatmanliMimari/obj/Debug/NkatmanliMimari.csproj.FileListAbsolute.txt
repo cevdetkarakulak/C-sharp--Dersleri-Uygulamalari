@@ -15,3 +15,7 @@ C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\Nka
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\obj\Debug\Nkatmanl.3B07259E.Up2Date
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\obj\Debug\NkatmanliMimari.exe
 C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\obj\Debug\NkatmanliMimari.pdb
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\bin\Debug\NkatmanliMimari.exe.manifest
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\bin\Debug\NkatmanliMimari.application
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\obj\Debug\NkatmanliMimari.exe.manifest
+C:\Users\efe_k\source\C sharp\C-sharp--Dersleri-Uygulamalari\NkatmanliMimari\NkatmanliMimari\obj\Debug\NkatmanliMimari.application
